@@ -3,7 +3,7 @@
 // After writing your function uncomment the matching function reference at the bottom of the file.
 
 
-// 1. Write a function called helloWorld that returns the string 'Hello World!'.
+ //1. Write a function called helloWorld that returns the string 'Hello World!'.
 
 // 2. Write a function called lambdaSchool that has a single parameter called num.
 //      num will be a positive integer.
@@ -46,7 +46,7 @@
 
 
 module.exports = {
-//  helloWorld,
+  helloWorld,
 //  lambdaSchool,
 //  longestString,
 //  computeUserAverageAge,
