@@ -46,7 +46,7 @@
 
 
 module.exports = {
-  helloWorld,
+ // helloWorld,
 //  lambdaSchool,
 //  longestString,
 //  computeUserAverageAge,
