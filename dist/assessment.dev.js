@@ -1,18 +1,14 @@
+"use strict";
+
 // Work through the problems in this file.  As you work through each problem periodically run: npm test
 // Your function name and the string must match the instructions exactly otherwise the tests will fail.
 // After writing your function uncomment the matching function reference at the bottom of the file.
-
-
 //1. Write a function called helloWorld that returns the string 'Hello World!'.
-
 function helloWorld() {
-    return "Hello World!";
+  return "Hello World!";
 }
-console.log(helloWorld);
 
-
-
-// 2. Write a function called lambdaSchool that has a single parameter called num.
+console.log(helloWorld); // 2. Write a function called lambdaSchool that has a single parameter called num.
 //      num will be a positive integer.
 //      If num is divisible by 3 return the string 'Lambda'
 //      If num is divisible by 5 return the string 'School'
@@ -23,40 +19,35 @@ console.log(helloWorld);
 //              lambdaSchool(15); // returns 'Lambda School'
 //              lambdaSchool(8); // returns 8
 
-function LambdaSchool(num) {
-    const num = 0;
+function LambdaSchool() {
+  var result = '';
 
-    if (num % 3 === 0) {
-        return "Lambda";
-    }
-    if (num % 5 === 0) {
-        return "School";
-    }
-    if (result === '') {
-        num;
-    }
+  if (num % 3 === 0) {
+    (function (result) {
+      return "Lambda";
+    });
+  }
 
-    return result;
+  if (num % 5 === 0) {
+    (function (result) {
+      return "School";
+    });
+  }
+
+  if (result === '') {
+    return num;
+  }
+
+  return result;
 }
 
-
-(LambdaSchool(5));
-
-
-// function checkValue(a, b) {
+LambdaSchool(5); // function checkValue(a, b) {
 //   if (a === 1)
 //     if (b === 2)
 //       console.log("a is 1 and b is 2");
 //     else
 //       console.log("a is not 1");
 // }
-
-
-
-
-
-
-
 // 3. Write a function called longestString that has a single parameter called strs.
 //      strs will be an array of strings.
 //      Return the longest string that is in strs.
@@ -65,7 +56,6 @@ function LambdaSchool(num) {
 //      Example:
 //              longestString(['hi', 'hello', 'ni hao', 'guten tag']); // returns 'guten tag'
 //              longestString(['JavaScript', 'HTML', 'CSS']); // returns 'JavaScript'
-
 // 4. Write a function called computeUserAverageAge that has a single parameter called users
 //      users is an array of user objects.
 //      Each user object has a property called age that is a number.
@@ -85,10 +75,9 @@ function LambdaSchool(num) {
 //              }];
 //              computeUserAverage(users); // returns 62 (This number is rounded up from 61.6666)
 
-
 module.exports = {
-    helloWorld,
-    LambdaSchool,
-    //  longestString,
-    //  computeUserAverageAge,
+  helloWorld: helloWorld,
+  LambdaSchool: LambdaSchool //  longestString,
+  //  computeUserAverageAge,
+
 };
