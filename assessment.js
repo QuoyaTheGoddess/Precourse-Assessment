@@ -5,12 +5,12 @@
 
 //1. Write a function called helloWorld that returns the string 'Hello World!'.
 
-function helloWorld() {
+function helloWorld(){
     return "Hello World!";
-}
-console.log(helloWorld);
+ }
 
-
+helloWorld();
+console.log(helloWorld());
 
 // 2. Write a function called lambdaSchool that has a single parameter called num.
 //      num will be a positive integer.
@@ -24,23 +24,42 @@ console.log(helloWorld);
 //              lambdaSchool(8); // returns 8
 
 function LambdaSchool(num) {
-    const num = 0;
+    let result = '';
 
     if (num % 3 === 0) {
-        return "Lambda";
+        result += 'Lambda';
     }
     if (num % 5 === 0) {
-        return "School";
+        result += ' School';
     }
     if (result === '') {
-        num;
+        return num;
     }
 
-    return result;
+    return result.trim();
 }
+LambdaSchool();
 
 
-(LambdaSchool(5));
+
+// function LambdaSchool(num) {
+//     const num = 0;
+
+//     if (num % 3 === 0) {
+//         return "Lambda";
+//     }
+//     if (num % 5 === 0) {
+//         return "School";
+//     }
+//     if (result === '') {
+//         num;
+//     }
+
+//     return result;
+// }
+
+
+// (LambdaSchool(5));
 
 
 // function checkValue(a, b) {
@@ -66,6 +85,11 @@ function LambdaSchool(num) {
 //              longestString(['hi', 'hello', 'ni hao', 'guten tag']); // returns 'guten tag'
 //              longestString(['JavaScript', 'HTML', 'CSS']); // returns 'JavaScript'
 
+function longestString(){
+    //
+}
+longestString();
+
 // 4. Write a function called computeUserAverageAge that has a single parameter called users
 //      users is an array of user objects.
 //      Each user object has a property called age that is a number.
@@ -85,10 +109,14 @@ function LambdaSchool(num) {
 //              }];
 //              computeUserAverage(users); // returns 62 (This number is rounded up from 61.6666)
 
+function computeUserAverageAge(){
+    //
+}
+computeUserAverageAge();
 
 module.exports = {
     helloWorld,
     LambdaSchool,
-    //  longestString,
-    //  computeUserAverageAge,
+    longestString,
+    computeUserAverageAge,
 };
